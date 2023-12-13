@@ -1,2 +1,2 @@
 # PHPEdu
-勉強
+PHP MYSQL 勉強
