@@ -1,5 +1,6 @@
 <?php
 	include $_SERVER['DOCUMENT_ROOT']."/aproj/db.php"; /* db load */
+	
 ?>
 <!doctype html>
 <head>
@@ -33,6 +34,9 @@
 			<div id="bo_content">
 				<?php echo nl2br("$board[content]"); ?>
 			</div>
+		<div>
+			<img src="../upload/<?=$board['name']?>/1.jpg" alt="1">
+		</div>
 	<!-- 목록, 수정, 삭제 -->
 	<div id="bo_ser">
 		<ul>
