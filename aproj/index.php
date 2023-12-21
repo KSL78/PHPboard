@@ -23,12 +23,12 @@
       <thead>
           <tr>
               <th width="70">번호</th>
-                <th width="500">제목</th>
-                <th width="120">글쓴이</th>
-                <th width="100">작성일</th>
-                <th width="100">조회수</th>
-            </tr>
-        </thead>
+              <th width="500">제목</th>
+              <th width="120">글쓴이</th>
+              <th width="100">작성일</th>
+              <th width="100">조회수</th>
+          </tr>
+      </thead>
         <?php
          if(isset($_GET['page'])){
           $page = $_GET['page'];
@@ -66,9 +66,8 @@
             <?php
               $img = "<img src='/aproj/img/new.png' alt='new' title='new' />"; 
               $lockimg = "<img src='/aproj/img/lock.png' alt='lock' title='lock' with='20' height='20' />";
-              if($board['lock_post']=="1")
-              { ?>
-              <span style="background:yellow;"><a href='/aproj/page/ck_read.php?idx=<?php echo $board["idx"];?>'><?php echo $title, $lockimg;
+              if($board['lock_post']=="1"){ ?>
+                <span style="background:yellow;"><a href='/aproj/page/ck_read.php?idx=<?php echo $board["idx"];?>'><?php echo $title, $lockimg;
               }else{
                 $boardtime = $board['date']; //$boardtime변수에 board['date']값을 넣음
                 $timenow = date("Y-m-d"); //$timenow변수에 현재 시간 Y-M-D를 넣음
