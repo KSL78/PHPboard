@@ -27,8 +27,11 @@
                     <div id="in_lock">
                         <input type="checkbox" value="1" name="lockpost" />해당글을 잠급니다.
                     </div>
-                    <div id="in_file">
+                    <!--<div id="in_file"> 12-18 파일업로드 테스트
                         <input type="file" value="1" name="b_file" />
+                    </div>-->
+                    <div id="in_file">
+                        <input type="file" value="1" name="upload_file" />
                     </div>
                     <div class="bt_se">
                         <button type="submit">글 작성</button>
