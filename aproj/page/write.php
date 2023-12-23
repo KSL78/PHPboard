@@ -31,7 +31,8 @@
                         <input type="file" value="1" name="b_file" />
                     </div>-->
                     <div id="in_file">
-                        <input type="file" value="1" name="upload_file" />
+                        <!-- multipul추가 -->
+                        <input type="file" name="upload_file[]" id="upload_file"  required multiple>
                     </div>
                     <div class="bt_se">
                         <button type="submit">글 작성</button>
