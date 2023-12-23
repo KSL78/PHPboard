@@ -28,14 +28,18 @@
 			<?php echo $board['name']; ?> <?php echo $board['date']; ?> 조회:<?php echo $board['hit']; ?>
 				<div id="bo_line"></div>
 			</div>
-			<div>
-			파일 : <a href="../upload/<?php echo $board['file'];?>" download><?php echo $board['file']; ?></a>
-			</div>
+			
 			<div id="bo_content">
 				<?php echo nl2br("$board[content]"); ?>
 			</div>
 		<div>
-			<img src="../upload/<?=$board['name']?>/1.jpg" alt="1">
+			
+			<?php
+				for ($i=0;$i<$board['pcnt'];$i++)
+				{
+					echo " <img src='../upload/$board[name]/$i.jpg' />";
+				}
+			?>
 		</div>
 	<!-- 목록, 수정, 삭제 -->
 	<div id="bo_ser">
