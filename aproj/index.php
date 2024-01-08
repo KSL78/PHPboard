@@ -2,23 +2,13 @@
 <!doctype html>
 <head>
 <meta charset="UTF-8">
-<title>게시판</title>
+<title>사진 게시판</title>
 <link rel="stylesheet" type="text/css" href="/aproj/css/style.css" />
 </head>
 <body>
 <div id="board_area"> 
-  <h1>자유게시판</h1>
-  <h4>자유롭게 글을 쓸 수 있는 게시판입니다.</h4>
-<div id="search_box">
-    <form action="/aproj/page/search_result.php" method="get">
-      <select name="catgo">
-        <option value="title">제목</option>
-        <option value="name">글쓴이</option>
-        <option value="content">내용</option>
-      </select>
-      <input type="text" name="search" size="40" required="required" /> <button>검색</button>
-    </form>
-    </div>
+  <h1>사진 갤러리</h1>
+  <h4>자유롭게 사진을 업로드 할 수 있는 게시판 입니다.</h4>
     <table class="list-table">
       <thead>
           <tr>
