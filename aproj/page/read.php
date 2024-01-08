@@ -33,7 +33,6 @@
 				<?php echo nl2br("$board[content]"); ?>
 			</div>
 		<div>
-			
 			<?php
 				for ($i=0;$i<$board['pcnt'];$i++)
 				{
