@@ -7,14 +7,37 @@
 ## 참여자
 * 본인(개인 프로젝트)
 ## 본 프로젝트 사용 기술 및 환경
-* Lan: PHP,Apache,MYSQL,CSS,JavaScript
+* Lan: PHP,Apache,MYSQL(phpmyadmin),CSS,JavaScript
 * OS,Tool: Windows 11,GitHub,Vscode,XAMPP
 ## 기능내용 목차
 1. 게시판(시진 및 글 업로드 가능)
 2. 수정 및 삭제
 3. MYSQL과 연동되어 데이터 저장 및 폴더 할당
 ****
-## 1. 게시판
+### !참고문헌 @직접제작
+## 1. MYSQL 데이터 테이블 및 게시판
+  * 데이터 테이블
+
+![table](https://github.com/KSL78/PHPboard/assets/53367924/79f89179-5dce-495a-a208-2d930d411e77)
+  * db.php 의 코드
+
+        <?php
+	        header('Content-Type: text/html; charset=utf-8'); // utf-8인코딩
+	        $DBa = "";
+	        $DBi = "";
+	        $DBp = "";
+	        $DBn = "";
+	        // DBa=localhost=DB주소(아파치), DBi=DB계정아이디, DBp=DB계정비밀번호, DBn=DB이름
+	        $db = new mysqli($DBa,$DBi,$DBp,$DBn); 
+	        $db->set_charset("utf8");
+	        function mq($sql)
+	        {
+		        global $db;
+		        return $db->query($sql);
+	        }
+        ?>
+  * 게시판
+
 ## 2. 수정 및 삭제
 ## 3. MYSQL과 연동되어 데이터 저장 및 업로드시 폴더 할당
 
