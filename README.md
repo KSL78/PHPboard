@@ -3,7 +3,7 @@
 * PHP,Apache,MYSQL를 이용한 사진 업로드 게시판 제작 프로젝트
 ## 제작 목적 및 참고
 * PHP 및 MYSQL 공부를 위해 제작
-* https://blog.naver.com/bgpoilkj
+* https://blog.naver.com/bgpoilkj/220708456525
 ## 참여자
 * 본인(개인 프로젝트)
 ## 본 프로젝트 사용 기술 및 환경
