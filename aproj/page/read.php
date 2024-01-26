@@ -34,6 +34,7 @@
 			</div>
 		<div>
 			<?php
+			if ($board['pcnt'] != 0)
 				for ($i=0;$i<$board['pcnt'];$i++)
 				{
 					echo " <img src='../upload/$board[name]/$i.jpg' />";
