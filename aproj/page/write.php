@@ -1,8 +1,8 @@
 <!doctype html>
 <head>
-<meta charset="UTF-8">
-<title>작성</title>
-<link rel="stylesheet" type="text/css" href="/aproj/css/style.css" />
+    <meta charset="UTF-8">
+    <title>작성</title>
+    <link rel="stylesheet" href="/aproj/css/style.css" />
 </head>
 <body>
     <div id="board_write">
@@ -19,9 +19,6 @@
                     <div class="wi_line"></div>
                     <div id="in_content">
                         <textarea name="content" id="ucontent" placeholder="글을 작성하여 주세요(필수X)" ></textarea>
-                    </div>
-                    <div id="in_pw">
-                        <input type="password" name="pw" id="upw"  placeholder="password" required />  
                     </div>
                     <div id="in_file">
                         <input type="file" name="upload_file[]" id="upload_file"  multiple required>
