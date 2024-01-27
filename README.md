@@ -7,6 +7,8 @@
 * 본인(개인 프로젝트)
 ## 참고 페이지
 * https://blog.naver.com/bgpoilkj/220708456525
+## 기한
+* 2023/12/24~
 ## 본 프로젝트 사용 기술 및 환경
 * Lan: PHP,Apache,MYSQL(phpmyadmin),CSS,JavaScript
 * OS,Tool: Windows 11,GitHub,Vscode,XAMPP
