@@ -1,13 +1,16 @@
-<?php include  $_SERVER['DOCUMENT_ROOT']."/aproj/db.php"; ?>
+<?php 
+  include  $_SERVER['DOCUMENT_ROOT']."/aproj/db.php"; 
+?>
 <!doctype html>
 <head>
-<meta charset="UTF-8">
-<title>사진 게시판</title>
-<link rel="stylesheet" type="text/css" href="/aproj/css/style.css" />
+  <meta charset="UTF-8">
+  <title>게시판</title>
+  <link rel="stylesheet" href="/aproj/css/style.css" />
 </head>
 <body>
 <div id="board_area"> 
-  <h1>사진 게시판</h1>
+  <h1>자유게시판</h1>
+  <h4>자유롭게 글을 쓸 수 있는 게시판입니다.</h4>
     <table class="list-table">
       <thead>
           <tr>
@@ -19,15 +22,12 @@
             </tr>
         </thead>
         <?php
-        // board테이블에서 idx를 기준으로 내림차순해서 5개까지 표시
           $sql = mq("select * from board order by idx desc limit 0,5"); 
             while($board = $sql->fetch_array())
             {
-              //title변수에 DB에서 가져온 title을 선택
               $title=$board["title"]; 
               if(strlen($title)>30)
               { 
-                //title이 30을 넘어서면 ...표시
                 $title=str_replace($board["title"],mb_substr($board["title"],0,30,"utf-8")."...",$board["title"]);
               }
         ?>
